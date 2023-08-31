@@ -18,7 +18,9 @@ resource "aws_instance" "ec2_instance" {
               systemctl enable docker
               systemctl start docker
               sudo chown $USER /var/run/docker.sock
-              docker run -p 80:80 -d nginx
+
+              # Run the Docker container with CPU limit of 2 CPUs
+              docker run -p 80:80 -d --cpus 2 nginx
               EOF
 }
 
