@@ -20,7 +20,7 @@ resource "aws_instance" "ec2_instance" {
               sudo chown $USER /var/run/docker.sock
 
               # Run the Docker container with CPU limit of 2 CPUs
-              docker run -p 80:80 -d --cpus 2 nginx
+              docker run -p 80:80 -d --cpus 1 nginx
               EOF
 }
 
