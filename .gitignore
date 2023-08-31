@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+
+# Compiled binaries or executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Terraform files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# Local environment files
+*.env
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Compiled output and build files
+/build/
+/dist/
+/target/
